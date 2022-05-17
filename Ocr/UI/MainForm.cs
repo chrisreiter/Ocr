@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -886,17 +887,31 @@ namespace Ocr.UI
                 {                    
                     OcrHelper.Ocr(processedImage);
                 }
-                /*using (Image processedImage = ProcessImage(ocrImagePanel.SelectionImage, Program.ActiveOcrProfileIndex))
+
+                using (Image processedImage = ProcessImage(ocrImagePanel.SelectionImage, Program.ActiveOcrProfileIndex))
                 {
                     originalRichTextBox.Parent.BackColor = Color.DodgerBlue;
-                    processedImage.Save("C:/ocr_tmp.png");
-                    OcrResult result = Program.ActiveOcrEngine.LoadFile("C:/ocr_tmp.png", Program.ActiveLanguageFrom);
+                    var path = Path.Combine("C:\\temp", "ocr_tmp.png");
+                    processedImage.Save(path);
+                    OcrResult result = Program.ActiveOcrEngine.LoadFile(path, Program.ActiveLanguageFrom);
                     if (result.Succes)
                     {
                         originalRichTextBox.Text = result.Text;
                     }
                     originalRichTextBox.Parent.BackColor = Color.Gray;
-                }*/
+                }
+
+                //using (Image processedImage = ProcessImage(ocrImagePanel.SelectionImage, Program.ActiveOcrProfileIndex))
+                //{
+                //    originalRichTextBox.Parent.BackColor = Color.DodgerBlue;
+                //    processedImage.Save("C:/ocr_tmp.png");
+                //    OcrResult result = Program.ActiveOcrEngine.LoadFile("C:/ocr_tmp.png", Program.ActiveLanguageFrom);
+                //    if (result.Succes)
+                //    {
+                //        originalRichTextBox.Text = result.Text;
+                //    }
+                //    originalRichTextBox.Parent.BackColor = Color.Gray;
+                //}
             }            
         }
 

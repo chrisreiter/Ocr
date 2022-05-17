@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="90">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>../BaseTypes.h</itemPath>
+      <itemPath>../../../ErrorCodes.h</itemPath>
+      <itemPath>../JNSOCR.h</itemPath>
+      <itemPath>../../../NSOCR.h</itemPath>
+      <itemPath>../NSOCR_Engine.h</itemPath>
+      <itemPath>../OcrConvert.h</itemPath>
+      <itemPath>../debug.h</itemPath>
+      <itemPath>../dllmain.h</itemPath>
+      <itemPath>../PUGIXML/pugiconfig.hpp</itemPath>
+      <itemPath>../targetver.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>../JNSOCR.cpp</itemPath>
+      <itemPath>../../../NSOCR.cpp</itemPath>
+      <itemPath>../OcrConvert.cpp</itemPath>
+      <itemPath>../debug.cpp</itemPath>
+      <itemPath>../dllmain.cpp</itemPath>
+      <itemPath>../../../../Include/memcpy.c</itemPath>
+      <itemPath>../PUGIXML/pugixml.cpp</itemPath>
+      <itemPath>../PUGIXML/pugixml.hpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Release" type="2">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+          <architecture>1</architecture>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <architecture>1</architecture>
+          <incDir>
+            <pElem>/usr/java/jdk1.7.0_79/include/linux</pElem>
+            <pElem>/usr/java/jdk1.7.0_79/include</pElem>
+            <pElem>../../..</pElem>
+            <pElem>../</pElem>
+          </incDir>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libJNSOCR.${CND_DLIB_EXT}/libjnsocr.so</output>
+          <linkerLibItems>
+            <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
+            <linkerLibStdlibItem>DynamicLinking</linkerLibStdlibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../../../ErrorCodes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../../NSOCR.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../../NSOCR.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../BaseTypes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../JNSOCR.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../JNSOCR.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../NSOCR_Engine.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../OcrConvert.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../OcrConvert.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../PUGIXML/pugiconfig.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../PUGIXML/pugixml.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../PUGIXML/pugixml.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../debug.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../debug.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../dllmain.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../dllmain.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../targetver.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Debug" type="2">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>/usr/java/jdk1.7.0_45/include/linux</pElem>
+            <pElem>/usr/java/jdk1.7.0_45/include</pElem>
+            <pElem>../../..</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libjnsocr.so</output>
+          <linkerLibItems>
+            <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
+            <linkerLibStdlibItem>DynamicLinking</linkerLibStdlibItem>
+          </linkerLibItems>
+          <commandLine>-Wl,--wrap=memcpy</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="../../../ErrorCodes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../../NSOCR.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../../NSOCR.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../BaseTypes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../JNSOCR.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../JNSOCR.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../NSOCR_Engine.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../OcrConvert.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../OcrConvert.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../PUGIXML/pugiconfig.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../PUGIXML/pugixml.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../PUGIXML/pugixml.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../debug.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../debug.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../dllmain.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../dllmain.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../targetver.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release_64" type="2">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+          <architecture>2</architecture>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <architecture>2</architecture>
+          <incDir>
+            <pElem>/usr/java/jdk1.7.0_79/include/linux</pElem>
+            <pElem>/usr/java/jdk1.7.0_79/include</pElem>
+            <pElem>../../..</pElem>
+            <pElem>../../../../Include</pElem>
+          </incDir>
+          <commandLine>-fpermissive</commandLine>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libJNSOCR.${CND_DLIB_EXT}/libjnsocr.so</output>
+          <linkerLibItems>
+            <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
+            <linkerLibStdlibItem>DynamicLinking</linkerLibStdlibItem>
+          </linkerLibItems>
+          <commandLine>-Wl,--wrap=memcpy</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="../../../ErrorCodes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../../NSOCR.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../../NSOCR.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../BaseTypes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../JNSOCR.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../JNSOCR.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../NSOCR_Engine.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../OcrConvert.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../OcrConvert.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../PUGIXML/pugiconfig.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../PUGIXML/pugixml.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../PUGIXML/pugixml.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../debug.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../debug.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../dllmain.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../dllmain.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../targetver.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

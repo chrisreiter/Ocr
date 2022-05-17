@@ -1,0 +1,36 @@
+﻿<Window x:Class="Sample.Window5"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Options" Height="631" Width="532" Loaded="Window_Loaded">
+    <Grid>
+        <Button Height="23" Margin="181,0,254,6" Name="bkOK" VerticalAlignment="Bottom" Click="bkOK_Click">OK</Button>
+        <Button Height="23" HorizontalAlignment="Right" Margin="0,0,173,6" Name="bkCancel" VerticalAlignment="Bottom" Width="75" Click="bkCancel_Click">Cancel</Button>
+        <CheckBox Height="17" HorizontalAlignment="Left" Margin="13,70,0,0" Name="cbFindBarcodes" VerticalAlignment="Top" Width="93">Find barcodes</CheckBox>
+        <CheckBox Height="17" HorizontalAlignment="Left" Margin="13,94,0,0" Name="cbImgInversion" VerticalAlignment="Top" Width="146">Detect image inversion</CheckBox>
+        <CheckBox Height="17" HorizontalAlignment="Left" Margin="13,116,0,0" Name="cbZonesInversion" VerticalAlignment="Top" Width="146">Detect zones inversion</CheckBox>
+        <CheckBox Height="17" HorizontalAlignment="Left" Margin="13,139,0,0" Name="cbDeskew" VerticalAlignment="Top" Width="162">Detect and fix image skew</CheckBox>
+        <CheckBox Height="17" Margin="13,162,156,0" Name="cbRotation" VerticalAlignment="Top">Detect and fix image rotation 90/180/270 degrees</CheckBox>
+        <CheckBox Height="17" HorizontalAlignment="Left" Margin="13,185,0,0" Name="cbImgNoiseFilter" VerticalAlignment="Top" Width="173">Apply noise filter for image</CheckBox>
+        <CheckBox HorizontalAlignment="Left" Margin="13,229,0,306" Name="cbGrayMode" Width="85">Gray mode</CheckBox>
+        <CheckBox HorizontalAlignment="Left" Margin="13,252,0,237" Name="cbFastMode" Width="162">Fast mode (less accurate)</CheckBox>
+        <CheckBox HorizontalAlignment="Left" Margin="13,275,0,0" Name="cbBinTwice" Width="146" Height="17" VerticalAlignment="Top">Binarize twice</CheckBox>
+        <Label Foreground="Red" Height="28" Margin="10,10,30,0" Name="lbWait" VerticalAlignment="Top">You can improve OCR performance and accuracy by changing default configuration.</Label>
+        <Label FontSize="12" Foreground="Red" Height="28" Margin="10,36,2,0" Name="label1" VerticalAlignment="Top">Check "Configuration" and "Performance Tips" sections of documentation for more options.</Label>
+        <Label Height="28" HorizontalAlignment="Left" Margin="10,0,0,180" Name="label2" VerticalAlignment="Bottom" Width="85">Enabled chars:</Label>
+        <Label Height="28" HorizontalAlignment="Left" Margin="10,0,0,150" Name="label3" VerticalAlignment="Bottom" Width="93">Disabled chars:</Label>
+        <TextBox Height="23" Margin="109,0,92,186" Name="edEnabledChars" VerticalAlignment="Bottom" />
+        <TextBox Height="23" Margin="109,0,92,157" Name="edDisabledChars" VerticalAlignment="Bottom" />
+        <Label Height="28" HorizontalAlignment="Left" Margin="10,0,0,123" Name="label4" VerticalAlignment="Bottom" Width="232">Binarization threshold (0..254; 255 - auto):</Label>
+        <TextBox Height="23" Margin="248,0,209,129" Name="edBinThreshold" VerticalAlignment="Bottom" />
+        <Label Height="28" HorizontalAlignment="Left" Margin="10,0,0,93" Name="label5" VerticalAlignment="Bottom" Width="232">Text quality (0..100; -1 - auto):</Label>
+        <TextBox Height="23" Margin="248,0,209,100" Name="edTextQual" VerticalAlignment="Bottom" />
+        <Label Height="28" HorizontalAlignment="Left" Margin="10,0,0,63" Name="label6" VerticalAlignment="Bottom" Width="232">PDF rendering DPI:</Label>
+        <TextBox Height="23" Margin="248,0,209,70" Name="edPDFDPI" VerticalAlignment="Bottom" />
+        <Label Foreground="Red" Height="28" Margin="10,0,2,34" Name="label7" VerticalAlignment="Bottom">NOTE: Some options will not be applied immediately, reload image to apply all changes.</Label>
+        <CheckBox Height="17" HorizontalAlignment="Left" Margin="13,208,0,0" Name="cbRemoveLines" VerticalAlignment="Top" Width="173">Detect and remove lines</CheckBox>
+        <Button Height="23" HorizontalAlignment="Right" Margin="0,0,30,5" Name="bkHelp" VerticalAlignment="Bottom" Width="69" Click="bkHelp_Click">Help</Button>
+        <CheckBox Margin="13,298,173,0" Name="cbCorrectMixed" Height="21" VerticalAlignment="Top">Correct mixed chars (letters and digits in same word)</CheckBox>
+        <CheckBox Height="21" HorizontalAlignment="Left" Margin="13,321,0,0" Name="cbDictionary" VerticalAlignment="Top" Width="146">Use dictionary</CheckBox>
+        <CheckBox Height="21" HorizontalAlignment="Left" Margin="13,0,0,228" Name="cbOneColumn" VerticalAlignment="Bottom" Width="185">Combine zones horizontally</CheckBox>
+    </Grid>
+</Window>

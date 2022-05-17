@@ -1,0 +1,1 @@
+start /MIN java -Djava.library.path=..\..\..\Bin -jar dist\sample.jar

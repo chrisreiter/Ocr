@@ -1,0 +1,10 @@
+﻿<Window x:Class="Sample.Window3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Progress" Height="161" Width="462" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Closed="Window_Closed">
+    <Grid Height="97">
+        <ProgressBar Margin="25,34,24,48" Name="ProgressBar1" />
+        <Button Height="23" Margin="170,0,195,12" Name="button1" VerticalAlignment="Bottom" Click="button1_Click">Cancel</Button>
+        <Label Height="28" Margin="170,0,155,0" Name="label1" VerticalAlignment="Top">Please wait...</Label>
+    </Grid>
+</Window>
