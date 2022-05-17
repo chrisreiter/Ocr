@@ -1,1 +1,0 @@
-#define NSOCRAPI	extern "C" int __stdcall
